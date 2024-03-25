@@ -1,0 +1,131 @@
+body {
+  background-color: #f9f9f9;
+  font-family: "Lucida Sans Unicode", cursive, sans-serif; /* Use Comic Sans MS for the body text */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1a1a;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  animation: slideInUp 0.5s ease;
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#result span {
+  color: #ff6f00;
+}
+
+/* Additional Styles for Emojis */
+.emoji {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+/* Additional Animations */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+  16.666% {
+    color: #ff7f00;
+  }
+  33.333% {
+    color: #ffff00;
+  }
+  50% {
+    color: #00ff00;
+  }
+  66.666% {
+    color: #0000ff;
+  }
+  83.333% {
+    color: #4b0082;
+  }
+  100% {
+    color: #9400d3;
+  }
+}
+
+.rainbow {
+  animation: rainbow 5s infinite;
+}
